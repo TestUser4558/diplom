@@ -14,7 +14,7 @@ class MainController extends Controller
     public function api(Request $request)
     {
         $data = [
-            'equp_token' => $request->input('equp_token'),
+            'equip_token' => $request->input('equip_token'),
             'x' => $request->input('x'),
             'y' => $request->input('y'),
             'datetime' => $request->input('datetime')
