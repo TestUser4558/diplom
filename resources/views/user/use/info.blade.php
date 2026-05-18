@@ -46,6 +46,19 @@
 
                 </div>
 
+                <div class="border rounded-4 p-3 mb-3 bg-light">
+
+                    <small class="text-muted d-block mb-1">
+                        Телефон сотрудника
+                    </small>
+
+                    <div class="fw-semibold fs-5">
+                        <i class="bi bi-telephone-fill me-1"></i>
+                        {{ $use->user->phone }}
+                    </div>
+
+                </div>
+
                 {{-- Dates --}}
                 <div class="border rounded-4 p-3 mb-3">
 

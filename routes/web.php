@@ -26,6 +26,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/user/changePass', [UserController::class, 'changePassUserHandle'])->name('user.changepass');
 
     Route::get('/eqips', [EqipController::class, 'index'])->name('eqips');
+    Route::get('/eqips/using', [EqipController::class, 'indexUsing'])->name('eqipsUsing');
     Route::get('/eqips/{eqip}', [EqipController::class, 'info'])->name('eqip.info');
 
     Route::get('/pdf/{eqip}', [PDFController::class, 'generate'])->name('pdf');

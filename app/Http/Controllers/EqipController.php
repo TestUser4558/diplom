@@ -12,8 +12,12 @@ class EqipController extends Controller
     public function index()
     {
         $data['eqips'] = Eqip::all();
-        $data['usings'] = Using_eqip::all()->where('active', 1);
         return view('user.eqip.index', $data);
+    }
+    public function indexUsing()
+    {
+        $data['usings'] = Using_eqip::all()->where('active', 1);
+        return view('user.eqip.indexUsing', $data);
     }
     public function info(Eqip $eqip)
     {
@@ -81,7 +85,7 @@ class EqipController extends Controller
         $eqip['date_end'] = date('Y-m-d');
         $eqip['active'] = false;
         $eqip->save();
-        return redirect()->route('eqips');
+        return redirect()->route('eqipsUsing');
     }
     public function setAcessHandle(Eqip $eqip, Request $r)
     {
@@ -90,6 +94,6 @@ class EqipController extends Controller
         $use['eqip_id'] = $eqip->id;
         $use['date_start'] = date('Y-m-d');
         $use->save();
-        return redirect()->route('eqips');
+        return redirect()->route('eqipsUsing');
     }
 }

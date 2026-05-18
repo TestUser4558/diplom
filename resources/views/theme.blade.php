@@ -51,6 +51,12 @@
                             </a>
                         </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('eqipsUsing') }}">
+                                <i class="bi bi-hdd-network me-1"></i>
+                                Используемое Оборудование
+                            </a>
+                        </li>
                         @admin
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('users') }}">
