@@ -113,7 +113,7 @@
                                         Изменить
                                     </a>
 
-                                    <form method="post">
+                                    <form>
                                         @csrf
 
                                         <button
