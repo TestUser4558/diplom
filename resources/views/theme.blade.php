@@ -164,18 +164,6 @@
 
     {{-- Bootstrap JS --}}
     <script src="{{ asset('css/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js') }}"></script>
-    {{-- Phone mask --}}
-    <script src="https://unpkg.com/imask"></script>
-
-    <script>
-        const phoneInput = document.getElementById('phone');
-
-        if (phoneInput) {
-            IMask(phoneInput, {
-                mask: '+{7} (000) 000-00-00'
-            });
-        }
-    </script>
 </body>
 
 </html>
